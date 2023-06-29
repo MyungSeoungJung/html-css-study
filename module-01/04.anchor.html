@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>anchor 링크 연결</title>
+  </head>
+  <body>
+    <!--a(anchor)태그는 다른 문서로 이동하게 해주는 링크(닻) 역할 -->
+    <!-- href 속성에는 이동할 곳의 경로를 넣음 -->
+    <!-- target: 링크를 연결할 대상, _blank: 새 탭 열기 -->
+    <a href="https://www.naver.com">네이버</a>
+    <a href="https:google.com" target="_blank">구글</a>
+
+    <!-- 내부경로(서버) -->
+    <!-- 같은 폴더(디렉터리)위치의 문서 -->
+    <!-- 현재 디렉터리 -->
+    <a href="02.list-tag.html">리스트 태그</a>
+    <!-- ..이 부모 디렉터리 -->
+    <a href="../index.html">인덱스 문서</a>
+    <!-- 자식 디렉터리 -->
+    <!-- ./자식디렉터리/자식/자식..../문서명 -->
+    <a href="sample/test.html">하위 파일</a>
+    <a href="./sample/test.html">하위 파일</a>
+  </body>
+</html>
