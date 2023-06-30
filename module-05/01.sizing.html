@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 중간에 ,를 찎으면 여러개를 선택 가능함 */
+      /* 기본 폰트사이즈 지정 */
+      html,
+      body {
+        font-size: 14px;
+      }
+      h1 {
+        font-size: 1.8rem;
+        width: 11rem;
+      }
+      p {
+        /* 기본적인 크기단위 px */
+        /* em은 부모의 폰트 크기에 대한 상대크기
+            1.5em이면  부모의 폰트 크기에 1.5배   */
+        /* font-size: 1.5em; */
+        /* rem = 최상위 부모 폰트 크기에 대한 상대크기 */
+        font-size: 1.5rem;
+
+        /* 너비
+        width: 500px;
+        %부모요소 크기의 비율
+        witdth: 80%; */
+        /* vw(viewport width):브라우저 표시영역기준으로 상대비율 
+           width: 80vw; 뷰포트넓이 크기 대비 80% 
+           height:80vh; 뷰포트높이 크기 대비 80%*/
+        width: 15vh;
+      }
+    </style>
+  </head>
+  <h1>Head Text</h1>
+  <body>
+    <div style="width: 50%">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas beatae sit
+        iusto, quidem similique amet consequuntur possimus quia. Perspiciatis
+        tempore, ab impedit tempora quae tenetur perferendis excepturi esse nisi
+        corporis?
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* 자손(decendant) 선택자 */
+    /* 부모선택자 자손선택자 자손... */
+    /* header(부모)태그 밑에 모든 h1들을 다 선택해 { } */
+    header h1 {
+      color: red;
+    }
+    section h1 {
+      color: blue;
+    }
+  </style>
+  <body>
+    <!-- div:최상위 부모  -->
+    <!-- h1,ul 자식 -->
+    <!--  ul의 아래 li -->
+    <div>
+      <h1></h1>
+      <h2></h2>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
+    <header>
+      <h1>Lorem, ipsum.</h1>
+      <nav>
+        <h1>Navigation</h1>
+      </nav>
+    </header>
+
+    <section>
+      <h1>Lorem, ipsum.</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum in
+        temporibus alias tempora assumenda culpa blanditiis at labore atque
+        quasi, vitae repudiandae itaque optio deserunt sunt dolores sapiente,
+        molestias inventore?
+      </p>
+    </section>
+  </body>
+</html>

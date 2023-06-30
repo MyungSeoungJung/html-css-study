@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* 자식 선택자  바로 아래에있는 자식만 선택하고싶을떄 > 사용
+        선택자 > 자식선택자 >...>....>*/
+    header > h1 {
+      color: red;
+    }
+    header > nav > h1 {
+      color: blue;
+    }
+
+    section > h1 {
+      color: blueviolet;
+    }
+  </style>
+  <body>
+    <!-- style태그 내의 스타일 속성보다 element style이 우선순위가 높다 -->
+    <!-- 좀 더 구체적인 선택자가 우선순위가 높다 -->
+    <!-- 예) header h1 : 자손 선택자,  haeder > nav > h1 : 자식 선택자(범위가 좁음) -->
+    <header>
+      <h1 style="color: brown">Lorem, ipsum.</h1>
+      <nav>
+        <h1>Navigation</h1>
+      </nav>
+    </header>
+
+    <section>
+      <h1>Lorem, ipsum.</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum in
+        temporibus alias tempora assumenda culpa blanditiis at labore atque
+        quasi, vitae repudiandae itaque optio deserunt sunt dolores sapiente,
+        molestias inventore?
+      </p>
+    </section>
+    <footer>
+      <nav>
+        <h1>Site Map</h1>
+      </nav>
+    </footer>
+  </body>
+</html>
