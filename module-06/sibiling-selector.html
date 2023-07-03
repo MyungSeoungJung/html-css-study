@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /*  <!-- 동위(형재자매) 선택자 -->
+          선택자 + 선택자
+          앞쪽 선택자 바로 뒤에 오는 동위 요소 */
+    h1 + h2 {
+      color: red;
+    }
+    /* 선택자 ~선택자
+        앞쪽 선택자와 동일한 위치에 뒷 선택자 요소 모두 */
+    /* h1 동위 요소중에서 h2모두 */
+    h1 ~ h2 {
+      background-color: orange;
+    }
+  </style>
+  <body>
+    <h1>Lorem, ipsum dolor.</h1>
+    <h2>Lorem, ipsum dolor.</h2>
+    <h2>Lorem, ipsum dolor.</h2>
+    <h2>Lorem, ipsum dolor.</h2>
+    <h2>Lorem, ipsum dolor.</h2>
+  </body>
+</html>

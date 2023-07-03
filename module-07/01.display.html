@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* 화면에서 숨김 
+      display:none;*/
+    h1 {
+      /* display: none; */
+    }
+    /* 화면에서 숨기지만 공간은 차지 */
+    div {
+      visibility: hidden;
+    }
+
+    h1:hover + div {
+      /* div는 기본이 block
+        block은 위에서부터 아래로
+        너비가 부모의 100% 높이는 컨텐트 높이 */
+      /* display: block; */
+
+      /* 보여줌,display속성 변경하지않음 */
+      visibility: visible;
+    }
+
+    li {
+      display: inline;
+    }
+    span {
+      /* span은 인라인 특성이라 width,height값이 안 들어감 
+          인라인특성은 콘텐트크기만큼 크기지정이라.
+            display:block 해줘야 크기제어가능*/
+      display: block;
+      width: 200px;
+      height: 100px;
+      /* 좌우정렬 
+          text-align*/
+      text-align: center;
+      border: 1px solid black;
+    }
+    span:nth-of-type(2) {
+      text-align: right;
+    }
+    span:first-of-type {
+      text-decoration: line-through;
+      text-decoration: underline;
+      text-decoration: dashed;
+      text-decoration-color: blue;
+      text-decoration-thickness: 20px;
+    }
+  </style>
+  <body>
+    <h1>Lorem, ipsum dolor.</h1>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi qui labore
+      dolores voluptate eveniet. Corrupti exercitationem quam fugit id fuga
+      impedit cupiditate, eveniet, tempore dolorum ducimus eum voluptate tenetur
+      minima.
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi qui labore
+      dolores voluptate eveniet. Corrupti exercitationem quam fugit id fuga
+      impedit cupiditate, eveniet, tempore dolorum ducimus eum voluptate tenetur
+      minima.
+    </div>
+    <ul>
+      <li>Lorem, ipsum dolor.</li>
+      <li>Lorem, ipsum dolor.</li>
+      <li>Lorem, ipsum dolor.</li>
+    </ul>
+    <span>Lorem, ipsum.</span>
+    <span>Lorem, ipsum.</span>
+  </body>
+</html>
