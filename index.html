@@ -6,26 +6,55 @@
  <title>초당 옥수수밥</title>
   </head>
   <style>
+
+    *{
+      box-sizing: border-box;
+      
+    }
+    table {
+   border-collapse: collapse;
+   width: 500px;
+   margin-top: 50px;
+   }
+
   h1 {
     background-color: #79E0EE;
+    padding: 10px;
    }
    h2{
     background-color: #98EECC;
+    padding: 10px;
    }
    table > thead {
-    background-color: #D0F5BE;
+    background-color: #E9F8F9;
+
    }
+  
  ul{
   background-color: rgb(255, 210, 230,0.6);
+
  }
- body{
-  background-color: #fbfff7;
+ li{
+  padding: 3px;
  }
+
  table > tbody > tr > td {
   background-color: #FBFFDC;
+  border: solid 1px;
+  border-left-style: none;
+  border-right-style: none;
  }
  body{
   background-color: #E9F8F9;
+  width: 800px;
+   margin: 0 auto;
+
+ }
+ 
+ /* td요소에 strong있어서 포함이 안되기떄문에
+ .클래스 자식선택자를 사용해서 효과적용하면 됨 */
+ .bar td {
+  background-color: #fbf1a2 !important;
  }
    
   </style>
@@ -51,7 +80,7 @@
 
     
     <!-- table 시작 -->
-    <table border="3" width="500">
+    <table>
       <thead>
         <th width="300">재료
           <td>용량</td>
@@ -60,8 +89,8 @@
   
 
       <tbody>
-        <tr>
-          <td><strong>초당 옥수수</strong></td>
+        <tr class="bar">
+          <td ><strong>초당 옥수수</strong></td>
           <td><em>1대</em></td>
         </tr>
         <tr>
@@ -125,7 +154,7 @@
 <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fpost.phinf.naver.net%2FMjAyMTA1MTNfMiAg%2FMDAxNjIwODg3MzA3ODQw.I6bjd84deWIAm45v_X8sOID2jLqgsBjPhVyhqMbyL0Mg.-HrOdoD5jpKCmCBLNM4qjEZFWuLL_WZrnalYRRA4_0wg.JPEG%2FIUNVLIlF3rLHtF50rzwn5kZU4E48.jpg&type=a340" alt=""> 
 
 
-<table border="3" width="500">
+<table >
   <thead>
     <th width="300">재료
       <td>용량</td>
@@ -133,7 +162,7 @@
   </thead>
 
   <tbody>
-    <tr>
+    <tr class="bar">
       <td><strong>새송이버섯</strong></td>
       <td><em>3개</em></td>
     </tr>
@@ -174,16 +203,16 @@
 
 
 
-<table border="3" width="500">
+<table>
   <thead>
-    <th width="300">재료
+    <th width="300" >재료
       <td>용량</td>
     </th>
   </thead>
 
   <tbody>
-    <tr>
-      <td><strong>고구마</strong></td>
+    <tr >
+      <td ><strong>고구마</strong></td>
       <td><em>3개</em></td>
     </tr>
     <tr>
@@ -232,7 +261,7 @@
 
 
 
-<table border="3" width="500">
+<table>
   <thead>
     <th width="300">재료
       <td>용량</td>
