@@ -35,7 +35,6 @@
    }
    
   
-  
  ul{
   background-color: rgb(255, 210, 230,0.6);
 
@@ -69,7 +68,15 @@
  .bar td {
   background-color: #fbf1a2 !important;
  }
-   
+
+ /* tr 2n번째 td[]0 */
+ tr:nth-child(2n) td{
+  background-color: #E9F8F9;
+ }
+ table > tr:first-child{
+
+ }
+  
   </style>
   <body>
     <head>
@@ -149,14 +156,14 @@
 <br>
 
 <hr>
-<head> <h1 id="sss">새송이간장버터구이 ★</h1></head>
+<head> <h1>새송이간장버터구이 ★</h1></head>
 <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fpost.phinf.naver.net%2FMjAyMTA1MTNfMiAg%2FMDAxNjIwODg3MzA3ODQw.I6bjd84deWIAm45v_X8sOID2jLqgsBjPhVyhqMbyL0Mg.-HrOdoD5jpKCmCBLNM4qjEZFWuLL_WZrnalYRRA4_0wg.JPEG%2FIUNVLIlF3rLHtF50rzwn5kZU4E48.jpg&type=a340" alt=""> 
 
 
 <h2>재료 목록</h2>
 <table>
   <thead>
-    <th >재료
+    <td>재료-</td>
       <td>용량</td>
     </th>
   </thead>
@@ -200,7 +207,7 @@
 
 <table>
   <thead>
-    <th>재료
+    <td>재료</td>
       <td>용량</td>
     </th>
   </thead>
@@ -261,7 +268,8 @@
 
 <table>
   <thead>
-    <th>재료
+    
+    <td>재료</td>
       <td>용량</td>
     </th>
   </thead>
