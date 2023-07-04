@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    html,
+    body {
+      /* defalut font-size */
+      font-size: 14px;
+    }
+    h1 {
+      font-size: 26px;
+    }
+    h1:nth-of-type(1) {
+      /* font-family: 서체 적용 */
+      /* 서체명, "서 체 명" */
+      /* 여러개 지정,왼쪽 것 부터 적용 */
+      /* 왼쪽 것이 없으면 오른쪽으로 넘어감 */
+      /* san-serif: 브라우저의 기본폰트인데 고딕체  고딕체란 꾸밈표시가 없는 서체(굵기 동일)*/
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    h1:nth-of-type(2) {
+      /* serif:브라우저의 기본폰티은데 명조체
+          명조체: 꾸밈이 있는 서체(붓 글씨) */
+      font-family: "Times New Roman", Times, serif;
+    }
+    h1:nth-of-type(3) {
+      font-family: "Noto Sans KR", sans-serif;
+      font-style: italic;
+      /* 100~900: 있는것만 쓴다 없으면 가까운쪽 */
+      font-weight: 300;
+      border: 1px solid black;
+      height: 200px;
+      /* 좌우 중앙정렬 */
+      text-align: center;
+      /* 세로 중앙정렬 박스 높이만큼 line-height를 준다 */
+      line-height: 200px;
+    }
+    p {
+      /* 행간, 행 높이 */
+      line-height: 0.5;
+    }
+  </style>
+  <body>
+    <h1>Lorem, ipsum.</h1>
+    <h1>Lorem, ipsum.</h1>
+    <h1>모든 인류 구성원의</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, sint dicta
+      quia illo tenetur cupiditate vitae quod ea repudiandae nulla tempora
+      facilis cumque temporibus explicabo illum exercitationem aut. Eveniet,
+      voluptatibus!
+    </p>
+  </body>
+</html>
