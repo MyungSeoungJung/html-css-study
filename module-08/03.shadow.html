@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    h1 {
+      /*text-shadow: 오른쪽 아래 흐림도(blur) 색상; 
+          왼쪽 -px 위로 -px*/
+      text-shadow: 5px 5px 5px black;
+    }
+    div {
+      border: 3px solid black;
+      /* box-shadow: 오른쪽 아래 흐림도(blur) 색상;  */
+      /* box-shadow: 10px 10px 30px black; */
+      /* ,를 이용해서 여러번 적용 가능 */
+      box-shadow: 10px 10px 10px black, 10px 10px 20px orange,
+        10px 10px 10px red;
+    }
+  </style>
+  <body>
+    <div>
+      <h1>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam ducimus
+        quis, fuga eius porro quae, itaque molestiae ratione dolorem temporibus
+        doloremque ali
+      </h1>
+    </div>
+  </body>
+</html>
