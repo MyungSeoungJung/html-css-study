@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+    }
+    .box:nth-of-type(1) {
+      /* 왼쪽으로 붙게 */
+      float: left;
+    }
+    .box:nth-of-type(2) {
+      /* 오른쪽으로 붙게 */
+      float: right;
+    }
+    p {
+      /* 이전에 floating을 했으면 */
+      /* 다음 요소에는 floating을 초기화 
+          clear:both*/
+      clear: both;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
+      dicta labore odit excepturi hic nesciunt odio culpa expedita molestiae,
+      nulla magnam quo? Eum recusandae maxime pariatur voluptatem quasi minus
+      dolorum!
+    </p>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    p {
+      width: 200px;
+      height: 100px;
+      border: 1px solid black;
+    }
+    p:nth-of-type(1) {
+      /* 컨텐트가 요소 크기 밖으로 나가는 경우 숨김 처리함
+          overflower:hidden 숨김 */
+      overflow: hidden;
+    }
+
+    p:nth-of-type(2) {
+      overflow: scroll;
+    }
+    p:nth-of-type(3) {
+      overflow-y: scroll;
+    }
+    p:nth-of-type(4) {
+      /* 컨텐트가 요소 크기 밖으로 나가지않는이상 스크롤이 생기지않음 */
+      overflow-y: auto;
+    }
+    p:nth-of-type(5) {
+      overflow: hidden;
+      /* 기본: 빈공간을 기준으로 내림
+          텍스트 컨텐트를 아래로 안 내림 */
+      white-space: nowrap;
+      /* 넘어가는 영역을 ...처리해줌 */
+      text-overflow: ellipsis;
+
+      /* overflow-x: auto; */
+    }
+  </style>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime itaque
+      aperiam quis nulla, consequatur dolore laborum officia earum blanditiis
+      sapiente! Possimus odio, saepe quibusdam impedit delectus pariatur dolor
+      nulla est?
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime itaque
+      aperiam quis nulla, consequatur dolore laborum officia earum blanditiis
+      sapiente! Possimus odio, saepe quibusdam impedit delectus pariatur dolor
+      nulla est?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime itaque
+      aperiam quis nulla, consequatur dolore laborum officia earum blanditiis
+      sapiente! Possimus odio, saepe quibusdam impedit delectus pariatur dolor
+      nulla est?
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime itaque
+      aperiam quis nulla, consequatur dolore laborum officia earum blanditiis
+      sapiente! Possimus odio, saepe quibusdam impedit delectus pariatur dolor
+      nulla est?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime itaque
+      aperiam quis nulla, consequatur dolore laborum officia earum blanditiis
+      sapiente! Possimus odio, saepe quibusdam impedit delectus pariatur dolor
+      nulla est?
+    </p>
+  </body>
+</html>

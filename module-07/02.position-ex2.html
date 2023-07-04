@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    div {
+      /* 자식이 absolute 부모가 relative면 부모가 자식을 감쌀수 없는 상황이라
+          크기값을 지정해야줘 한다. */
+      position: relative;
+      border: 1px solid black;
+      height: 100px;
+    }
+    p {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  </style>
+  <body>
+    <div>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus
+        corrupti vitae, unde, doloremque esse aliquid alias perspiciatis animi
+        sequi ad at temporibus necessitatibus quae ex excepturi obcaecati nam
+        magnam eaque.
+      </p>
+    </div>
+  </body>
+</html>

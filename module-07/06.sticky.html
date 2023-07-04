@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      height: 2000px;
+    }
+    nav {
+      /* positon: absolut,fixed,sticky
+          top,left,bottom,right중에 1개 */
+      /* sticky는 스크롤 영역 안에서 static
+              스크롤 영역 밖으로 나가면 fixed처럼 작용 */
+      position: sticky;
+      top: 70px;
+    }
+    ul {
+      text-align: center;
+    }
+    li {
+      display: inline;
+    }
+  </style>
+  <body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <nav>
+      <ul>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem ipsum dolor.</li>
+      </ul>
+    </nav>
+  </body>
+</html>
