@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
  <title>명승정의 요리 레시피</title>
   </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@300;500&display=swap" rel="stylesheet">
   <style>
 
     *{
       box-sizing: border-box;
       padding: 0;
       margin: 0;
+      font-family: 'Dongle', sans-serif;
+      font-family: 'Nanum Pen Script', cursive;
+      font-family: 'Noto Sans KR', sans-serif;
     }
 
   table {
@@ -22,14 +28,15 @@
    }
 
   h1 {
-    background-color: #b4ebca;
+    height: 100px;
     padding: 10px;
     text-align: center;
-   
+    font-size: 3rem;
+    color: #000000;
    }
   
    h2{
-    background-color: #98EECC;
+    background-color: #bcf4f5;
     padding: 10px;
     width: 300px;
     height: 50px;
@@ -38,11 +45,10 @@
     text-align: center;
     margin-top: 70px;
     box-shadow: 3px 3px 3px rgb(3, 37, 0);
- 
    }
    h3{
     font-size: 20px;
-    background-color: #98EECC;
+    background-color: #bcf4f5;
     width: 140px;
     height: 35px;
     text-align: center;
@@ -72,17 +78,19 @@
    
   
  ul{
-  background-color: #b4ebca;
+  background-color: #bcf4f5;
   height: 50px;
   padding-top: 14px;
   border-radius: 40px;
- 
+  box-shadow: 5px 5px 5px black;
+
 
  }
 nav ul li{
   padding: 3px;
   margin: 10px;
   display: inline;
+
  }
 
  a {
@@ -116,18 +124,11 @@ nav ul li{
   height: 500px;
  }
 
- aside article{
-  float: right;
-  width: 400px;
-  background-color: red;
-  height: 400px;
-
- }
 
  section{
   width: 800px;
   float: left;
-  background-color: bisque;
+  background-color: rgb(255, 245, 218);
  }
  
  /* td요소에 strong있어서 포함이 안되기떄문에
@@ -145,19 +146,15 @@ nav ul li{
   position: sticky;
   top: 0;
   width: 100%;
-  text-align: center;
- 
+  text-align: center; 
  }
  
-#head{
-  background-color: #ffb7c3;
-}
 ol{
   padding-left: 30px;
   line-height: 2rem;
-  background-color: #98EECC;
+  background-color: #bcf4f5;
 }
-div:nth-of-type(1){
+.shadow{
   position: relative;
   width: 300px;
   height: 50px;
@@ -172,31 +169,116 @@ div:nth-of-type(1){
   text-align: center;
   line-height: 50px;
 }
-div:nth-of-type(2){
-  position: relative;
-  width: 300px;
-  height: 50px;
-  border-top-right-radius: 30px;
-  top: -50px;
-  left: 75px;
-  z-index: -40;
-  background-color: #70f3bf;
-  box-shadow: 3px 3px 3px rgb(3, 37, 0);
-  margin-bottom: -50px;
-  font-size: 20px;
-  text-align: center;
-  line-height: 50px;
+footer{
+  width: 1200px;
+  height: 200px;
+}
+#maindiv{
+  height: 4000px;
+}
+#toptable1{
+
+  border: 1px solid black;
+  border-top-color: gray;
+  background-color: rgb(255, 245, 218);
+  height:200px;
+  background-image: url("/img/e52jjimdak.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+
+}
+#toptable2{
+
+border: 1px solid black;
+background-color: rgb(255, 245, 218);
+background-image: url("/img/gaji1_m.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-top-color: gray;
+height:150px;
+}
+#toptable3{
+
+border: 1px solid black;
+background-color: rgb(255, 245, 218);
+background-image: url("/img/janga.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-top-color: gray;
+height:150px;
+}
+#toptableth{
+  background-color: rgb(255, 245, 218);
+  width: 100%;
+  height: 60;
+}
+.toptablebott{
+height: 30px;
+background-color: rgb(255, 245, 218);
+text-align: center;
+border-bottom-style: none;
+
+}
+.toptabletd{
+width: 399.81px;
+overflow: hidden;
+height: 50px;
+}
+.toptablebott1{
+height: 40px;
+background-color: rgb(255, 245, 218);
+text-align: center;
+border-bottom-style: none;
+padding-bottom: 10px;
+
+}
+#toptabletitle{
+  background-color: rgb(255, 245, 218);
+    padding: 10px;
+    width: 320px;
+    height: 50px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    text-align: center;
+    margin-top: 70px;
+    box-shadow: 3px 3px 3px rgb(3, 37, 0);
+}
+/* 사이드 테이블 */
+aside article table{
+  float: right;
+  width: 400px;
+  background-color:rgb(255, 245, 218);
+  height: 500px;
+  border: 1px solid black;
+  
+ }
+ /* 사이드 테이블 제목 */
+.sidetabletitle{
+  height: 30px;
+  width: 400px;
 }
   </style>
 
    <head>
-    <h1 id="head">명승정의 요리 블로그</h1>
+    <h1 id="head">🍜명승정의 요리 블로그🥘</h1>
   </head>
 
   <!-- body start -->
   <body>
 
- 
+<div id="maindiv">
     <!-- nav -->
     <nav>
     <ul>
@@ -213,17 +295,47 @@ div:nth-of-type(2){
 </nav>
 <!-- nav close -->
 
- <img src="./img/tomato.jpg" alt="">
 
-        <a href="https://www.10000recipe.com/recipe/7004786" target="_blank">   <h2>초당 옥수수 솥밥</h2></a>
-        <div></div>
-        <div></div>
+ <img src="./img/tomato.jpg" alt="">
+<h2 id="toptabletitle">🥇🥈🥉주간 인기레시피</h2>
+<div>
+ <table>
+  <thead id="toptableth">
+    <td class="toptabletd">단짠단짠 간장소스 안동찜닭</td>
+    <td class="toptabletd">자꾸 손이가는 마약 가지덮밥</td>
+    <td class="toptabletd">5단계로 만드는 바다장어덮밥</td>
+
+  </thead>
+
+
+  <tr>
+    <td  id="toptable1"></td>
+    <td  id="toptable2"></td>
+    <td  id="toptable3"></td>
+  </tr>
+  <tr>
+    <td  class="toptablebott">#안동찜닭 #찜닭레시피 #닭요리</td>
+    <td  class="toptablebott">백선생 레시피,촉촉하고 맛있는 가지덮밥 만들기</td>
+    <td  class="toptablebott">양념이 참 맛있는 바다장어 덮밥</td>
+  </tr>
+  <tr>
+    <td  class="toptablebott1">⭐(4.9)</td>
+    <td  class="toptablebott1">⭐(4.2)</td>
+    <td  class="toptablebott1">⭐(4.7)</td>
+  </tr>
+</table>
+</div>
+
+<div>
+        <a href="https://www.10000recipe.com/recipe/7004786" target="_blank">   <h2>초당 옥수수 솥밥</h2> </a>
+      </div>
+          
 
         <!-- section start -->
         <section>
       
 <!-- 내부 이미지 외부 저장소에 올릴려면 사진이 html파일보다 안에 있어야됨 -->
-      <img src="./module-01/img/corn.jpg" alt="">
+      <img src="/img/corn.jpg" alt="">
 
       <p>재료 목록</p>
 
@@ -281,7 +393,9 @@ div:nth-of-type(2){
 <hr>
 <head> <h2>새송이간장버터구이</h2></head>
 
-<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fpost.phinf.naver.net%2FMjAyMTA1MTNfMiAg%2FMDAxNjIwODg3MzA3ODQw.I6bjd84deWIAm45v_X8sOID2jLqgsBjPhVyhqMbyL0Mg.-HrOdoD5jpKCmCBLNM4qjEZFWuLL_WZrnalYRRA4_0wg.JPEG%2FIUNVLIlF3rLHtF50rzwn5kZU4E48.jpg&type=a340" alt="" id="sss"> 
+
+
+<img src="https://i.ytimg.com/vi/i-eanC6Rcms/maxresdefault.jpg" alt="" id="sss"> 
 
 
 <p>재료 목록</p>
@@ -332,7 +446,6 @@ div:nth-of-type(2){
   <thead>
     <td>재료</td>
       <td>용량</td>
-    </th>
   </thead>
 
   <tbody>
@@ -425,10 +538,37 @@ div:nth-of-type(2){
 <li>썰어논 고추/파와 함께.. 잘 버무려 주면 완성이랍니다. ^^</li>
   </ol>
   <hr>
- 
 </section>
+
 <aside>
-  <article>어 사이드 태그</article>
+  <article>
+    <table>
+      <thead></thead>
+      <tbody>
+        <tr>
+          <td class="sidetabletitle">asds</td>
+        </tr>
+        <tr>
+          <td>asds</td>
+        </tr>
+        <tr>
+          <td class="sidetabletitle">asds</td>
+        </tr>
+        <tr>
+          <td>asdasdasds</td>
+        </tr>
+      </tbody>
+    </table>
+  </article>
 </aside>
+
+</div>
+
+
+<footer>
+asds
+</footer>
+
+
 </body>
 </html>
