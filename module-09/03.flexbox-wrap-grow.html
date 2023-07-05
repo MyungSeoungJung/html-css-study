@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+      border: 1px solid red;
+      padding: 10px;
+      margin: 20px;
+    }
+    .item {
+      border: 1px solid black;
+      width: 100px;
+      height: 100px;
+      text-align: center;
+    }
+    .wo-height {
+      border: 1px solid black;
+      width: 100px;
+    }
+    .wo-size {
+      border: 1px solid black;
+    }
+    .col {
+      flex-direction: column;
+    }
+
+    .wrap {
+      /* flext컨테이너 밖으로 item이 나간다
+          교차축으로 내려준다 */
+      flex-wrap: wrap;
+    }
+
+    .grow {
+      /* flex-grow: 숫자 
+          flex아이템의 늘리는 비율
+              여분 공간만큼 늘림*/
+      flex-grow: 1;
+    }
+    .grow2 {
+      /* flex-grow: 숫자 
+          flex아이템의 늘리는 비율
+              여분 공간만큼 늘림*/
+      flex-grow: 2;
+    }
+    .shrink-2 {
+      /* shrink 비율만큼 줄인다 */
+      flex-shrink: 2;
+    }
+    .flext-short {
+      /* flext-basis:크기 값 */
+      /* flex item의 주축의 기본크기 */
+      /* flex요소는 flex-basis 주축크기 지정 */
+
+      /* grow shrink 기본크기 */
+
+      flex: 0 1 150px;
+    }
+  </style>
+  <body>
+    <div class="container wrap col" style="width: 500px; height: 300px">
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+      <div class="item wo-size">1</div>
+    </div>
+
+    <div class="container">
+      <!-- 1 item과 2 item이 여분 공간을 1:1로 먹는다 -->
+      <!-- <div class="item wo-size grow">1</div> -->
+      <!-- <div class="item wo-size grow">2</div> -->
+      <div class="item wo-size grow">1</div>
+      <div class="item wo-size grow2">2</div>
+      <div class="item wo-size grow">3</div>
+    </div>
+
+    <!-- shrink 속성값 비율만큼 줄인다 -->
+    <div class="container">
+      <div class="item shrink-2">1</div>
+      <div class="item shrink-2">2</div>
+      <div class="item">3</div>
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+
+    <div class="container">
+      <div class="item flext-short">1</div>
+      <div class="item flext-short">2</div>
+      <div class="item flext-short">3</div>
+      <div class="item flext-short">3</div>
+    </div>
+  </body>
+</html>

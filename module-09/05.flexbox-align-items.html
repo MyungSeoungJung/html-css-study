@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      /* /* flextbox로 선언이 되고 */
+      /* display:flex로 되어있는 요소를 flext컨테이너  */
+      /* flex컨테이너 자식요소를  flex아이템  */
+      display: flex;
+      border: 1px solid red;
+      padding: 10px;
+      /* 기본적으로 아이템을 행으로 배치 */
+      margin: 20px;
+    }
+
+    .item {
+      border: 1px solid black;
+      text-align: center;
+      /* flex: 1 -> flex 1 1 auto */
+      flex: 1;
+    }
+
+    .start {
+      /* 교차축 정렬 align-item */
+      align-items: flex-start;
+    }
+
+    .end {
+      /* 교차축 start 지점 정렬 */
+      align-items: flex-end;
+    }
+    .center {
+      align-items: center;
+    }
+    .gap-10 {
+      /* flex item간 간격을 지정 */
+      gap: 10px;
+    }
+  </style>
+  <body>
+    <!-- 교차축(cross-axis) stretch가 default -->
+    <div class="container gap-10" style="height: 100px">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+    <!-- 교차축 strart 지점 정렬 -->
+    <div class="container start" style="height: 100px">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+    <!-- 교차축 end 지점 정렬 -->
+    <div class="container end" style="height: 100px">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+    <!-- 교차축 center 지점 정렬 -->
+    <div class="container center" style="height: 100px">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+  </body>
+</html>

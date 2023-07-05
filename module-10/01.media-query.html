@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* mobile-first 디자인을 해야합니다.
+        가장 작은 화면(장치) 먼저 */
+
+    /* 무조건 적용되는 부분 */
+    nav ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    /* min-width: 크기값
+        크기값보다 큰 장치에서 min-width까지 */
+    /* 576px 이상일때 추가로 적용 */
+    @media (min-width: 576px) {
+      nav ul {
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 0;
+        /* 겹치는 부분 위에 gap 말고 gap: 0 적용 */
+      }
+    }
+  </style>
+  <body>
+    <nav>
+      <ul>
+        <li>item</li>
+        <li>item2</li>
+        <li>item3</li>
+      </ul>
+    </nav>
+  </body>
+</html>
