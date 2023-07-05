@@ -126,7 +126,7 @@ nav ul li{
 
 
  section{
-  width: 800px;
+  width: 900px;
   float: left;
   background-color: rgb(255, 245, 218);
  }
@@ -258,16 +258,32 @@ padding-bottom: 10px;
 /* 사이드 테이블 */
 aside article table{
   float: right;
-  width: 400px;
+  width: 300px;
   background-color:rgb(255, 245, 218);
   height: 500px;
-  border: 1px solid black;
   
  }
  /* 사이드 테이블 제목 */
 .sidetabletitle{
   height: 30px;
   width: 400px;
+  
+}
+#sidetabletd1{
+background-image: url("/img/sid-img1.jpg");
+background-position: center center;
+background-repeat: no-repeat;
+background-size: contain;
+border-bottom-style: none;
+}
+#sidetabletd2{
+
+background-image: url("/img/sid-img2.jpg");
+background-position: center center;
+background-repeat: no-repeat;
+background-size: contain;
+border-bottom-style: none;
+
 }
   </style>
 
@@ -543,20 +559,23 @@ aside article table{
 <aside>
   <article>
     <table>
-      <thead></thead>
+      <thead>
+        <td>⏰타임 세일 광고</td>
+      </thead>
       <tbody>
         <tr>
-          <td class="sidetabletitle">asds</td>
+          <td class="sidetabletitle">[입점특가] 유원트 에디슨2 5세대 로봇청소기</td>
         </tr>
         <tr>
-          <td>asds</td>
+          <td id="sidetabletd1"></td>
         </tr>
         <tr>
-          <td class="sidetabletitle">asds</td>
+          <td class="sidetabletitle">접이식 무선선풍기 R3-FAN</td>
         </tr>
         <tr>
-          <td>asdasdasds</td>
+          <td id="sidetabletd2"></td>
         </tr>
+    
       </tbody>
     </table>
   </article>
