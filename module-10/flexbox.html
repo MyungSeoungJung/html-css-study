@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      nav,
+      main,
+      aside,
+      article,
+      section {
+        border: 1px solid black;
+      }
+      /* 바디 */
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+      }
+      /* 네비게이션 메인  */
+      nav,
+      main {
+        flex: 1;
+      }
+      /*  */
+      main {
+        display: flex;
+      }
+      /* 사이드바 태그 */
+      aside {
+        flex: 1;
+      }
+
+      /* 위아래 감싸는 테이블 */
+      article {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+      }
+
+      section:nth-of-type(1) {
+        /* 위 */
+        flex: 2;
+      }
+
+      section:nth-of-type(2) {
+        /* 아래 */
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1>navigation</h1>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+    </nav>
+    <main>
+      <aside>왼쪽 사이드</aside>
+      <article>
+        <section>위</section>
+        <section>아래</section>
+      </article>
+      <aside>오른쪽 사이드</aside>
+    </main>
+  </body>
+</html>
