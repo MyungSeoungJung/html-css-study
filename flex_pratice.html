@@ -9,7 +9,7 @@
     /* 전체를 감싸는 컨테이너 display:flex 지정 */
     body {
       width: 1000px;
-      height: 800px;
+      height: 1500px;
       border: 1px solid black;
       display: flex;
       flex-direction: column;
@@ -18,6 +18,7 @@
       box-sizing: border-box;
       font-size: 14px;
     }
+    /* 헤더-------------------------------------------------------- */
     /* 바디 안에 감싸지는 item이면서 aside와 section을 감싸는 컨테이너 */
     header {
       border: 1px solid black;
@@ -27,7 +28,14 @@
     }
 
     /* flex 1로 균등배분 */
-    header aside {
+    header aside:nth-of-type(1) {
+      flex: 1;
+      background-image: url(https://image7.coupangcdn.com/image/coupang/common/logo_coupang_w350.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+    header aside:nth-of-type(2) {
       flex: 1;
     }
     /* flex:2로 side들보다는 크게
@@ -62,15 +70,15 @@
       font-size: 0.7rem;
       padding-top: 10px;
     }
-    /* 메인 css--------------------------- */
-    main {
+    /* 메인 css------------------------------------------------------- */
+    main:nth-of-type(1) {
       flex: 8;
       display: flex;
+      margin-bottom: 30px;
     }
     /* 메인 가운데 전체 컨테이너 부분 */
     main section {
       flex: 2;
-
       border: 1px solid black;
       height: 100%;
       display: flex;
@@ -117,10 +125,101 @@
       content: " | 오늘 쿠팡이 엄선한 가장 HOT한 상품!";
       font-size: 0.7em;
     }
+
+    /* 메인2--------------------------------------------- */
+
+    main:nth-of-type(2) {
+      flex: 7;
+      display: flex;
+    }
+    /* 메인 2 왼쪽 */
+    main:nth-of-type(2) div:nth-of-type(1) {
+      display: flex;
+      flex-direction: column;
+      flex: 1.5;
+    }
+    /* 메인 2 왼쪽 colume 위 */
+    main:nth-of-type(2) article:nth-of-type(1) {
+      display: flex;
+      flex-direction: column;
+      flex: 1.5;
+    }
+    /* 메인 2 왼쪽 colume 아래 */
+    main:nth-of-type(2) article:nth-of-type(2) {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    /* 메인 2 왼쪽 colume 아래 span */
+    main:nth-of-type(2) article:nth-of-type(2) span {
+      border: 1px solid gray;
+      width: 100px;
+      height: 25px;
+      font-size: 0.8rem;
+      text-align: center;
+      padding-top: 5px;
+      margin-top: 5px;
+      margin-left: 7px;
+      color: rgb(0, 157, 255);
+    }
+    main:nth-of-type(2) article:nth-of-type(2) span:hover {
+      background-color: rgb(0, 157, 255);
+      color: white;
+    }
+    main:nth-of-type(2) strong {
+      margin-bottom: 10px;
+      margin-left: 7px;
+      margin-top: 30px;
+      font-size: 1.1rem;
+    }
+    /* 메인2 가운데 */
+    main:nth-of-type(2) div:nth-of-type(2) {
+      display: flex;
+      flex: 3;
+      background-image: url(https://thumbnail8.coupangcdn.com/thumbnails/remote/x/image/bannerunit/bannerunit_78e156db-3c70-4f84-8d55-48c6ff964d97.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+    }
+    /* 메인2 가운데 사진 글자 span 컨테이너 */
+    main:nth-of-type(2) div:nth-of-type(2) > span {
+      width: 280px;
+      flex-direction: column;
+      opacity: 0.8;
+      display: flex;
+      justify-content: center;
+      margin-top: 450px;
+    }
+    /* 메인2 가운데 사진 글자 item 1, 2 */
+    main:nth-of-type(2) div:nth-of-type(2) span > span:nth-of-type(1) {
+      background-color: rgb(0, 157, 255);
+      height: 50px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    main:nth-of-type(2) div:nth-of-type(2) span > span:nth-of-type(2) {
+      background-color: rgb(0, 157, 255);
+      color: white;
+      font-size: 0.4rem;
+      display: flex;
+      height: 50px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* 메인2 오른쪽 */
+    main:nth-of-type(2) div:nth-of-type(3) {
+      flex: 4;
+    }
   </style>
   <body>
+    <!-- 헤더 시작 -->
     <header>
-      <aside>왼쪽</aside>
+      <aside></aside>
       <section>
         <article>검색바</article>
         <ul>
@@ -134,6 +233,8 @@
       </section>
       <aside>오른쪽</aside>
     </header>
+    <!-- 헤더 끝 -->
+    <!-- 메인 시작 -->
     <main>
       <aside>왼쪽</aside>
 
@@ -162,7 +263,34 @@
           />
         </div>
       </section>
+
       <aside>오른쪽</aside>
     </main>
+    <!-- 메인 끝 -->
+    <!-- 메인 2 -->
+    <main>
+      <div>
+        <article>
+          <h3>남성패션</h3>
+          <p>바로가기 ></p>
+        </article>
+        <article>
+          <strong>HOT키워드</strong>
+          <span>#반팔티셔츠</span>
+          <span>#반바지</span>
+          <span>#리넨 팬츠</span>
+          <span>#슬리퍼</span>
+          <span>#카드지갑</span>
+        </article>
+      </div>
+      <div>
+        <span>
+          <span>여름 슈즈 완전정복</span>
+          <span>여름에 신기 좋은 스니커즈에서 샌들까지</span>
+        </span>
+      </div>
+      <div>ㅁㄴㄹ</div>
+    </main>
+    <!-- 메인2 끝 -->
   </body>
 </html>
