@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
   </head>
   <style>
     /* 전체를 감싸는 컨테이너 display:flex 지정 */
@@ -27,7 +33,7 @@
       flex: 1;
     }
 
-    /* flex 1로 균등배분 */
+    /* 헤더 aside */
     header aside:nth-of-type(1) {
       flex: 1;
       background-image: url(https://image7.coupangcdn.com/image/coupang/common/logo_coupang_w350.png);
@@ -35,9 +41,22 @@
       background-position: center;
       background-size: contain;
     }
+    /* 헤더 오른쪽 컨테이너*/
     header aside:nth-of-type(2) {
       flex: 1;
     }
+    /* 헤더 오른쪽 div컨테이너  */
+    header aside:nth-of-type(2) div {
+      display: flex;
+      flex: 1;
+    }
+    /* 헤더 오른쪽 위 아래  */
+    header aside:nth-of-type(2) span {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
     /* flex:2로 side들보다는 크게
         그리고 column으로  위아래 나누기
           헤더안에 감싸지는 item과 동시에 2개로 나누기 위해 컨테이너가 되어야함
@@ -70,6 +89,7 @@
       font-size: 0.7rem;
       padding-top: 10px;
     }
+
     /* 메인 css------------------------------------------------------- */
     main:nth-of-type(1) {
       flex: 8;
@@ -121,6 +141,7 @@
     main aside {
       flex: 1;
     }
+
     span > h3::after {
       content: " | 오늘 쿠팡이 엄선한 가장 HOT한 상품!";
       font-size: 0.7em;
@@ -231,7 +252,18 @@
           <li><span>반품마켓</span></li>
         </ul>
       </section>
-      <aside>오른쪽</aside>
+      <aside>
+        <div>
+          <span>
+            <i class="fas fa-user fa-3x" style="color: #b7b5b5"></i>
+            <span>아래</span>
+          </span>
+          <span>
+            <i class="fas fa-shopping-cart fa-3x" style="color: #b7b5b5"></i>
+            <span>아래</span>
+          </span>
+        </div>
+      </aside>
     </header>
     <!-- 헤더 끝 -->
     <!-- 메인 시작 -->
